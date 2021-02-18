@@ -4,6 +4,7 @@ class UserProfile extends React.Component {
       super(props)
     //   this.handleSubmit = this.handleSubmit.bind(this)
       this.input = React.createRef()
+      this.pass = React.createRef()
     }
   
     // handleSubmit(event) {
@@ -12,7 +13,7 @@ class UserProfile extends React.Component {
     // }
 
      handleSubmit = (event)=> {
-        alert('A name was submitted: ' + this.input.current.value)
+        alert('A name was submitted: ' + this.input.current.value,this.pass.current.value)
         event.preventDefault()
       }
   
@@ -22,6 +23,10 @@ class UserProfile extends React.Component {
           <label>
             {'Name:'}
             <input type="text" ref={this.input} />
+          </label>
+          <label>
+            {'password:'}
+            <input type="text" ref={this.pass} />
           </label>
           <input type="submit" value="Submit" />
         </form>
