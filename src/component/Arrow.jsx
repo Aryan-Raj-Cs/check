@@ -34,6 +34,11 @@ class UserProfile extends React.Component {
             <input type="text"  />
           </label>
 
+          <label>
+            {'age:'}
+            <input type="text"  />
+          </label>
+
           <input type="submit" value="Submit" />
         </form>
       );
