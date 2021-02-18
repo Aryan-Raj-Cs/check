@@ -28,6 +28,12 @@ class UserProfile extends React.Component {
             {'password:'}
             <input type="text" ref={this.pass} />
           </label>
+
+          <label>
+            {'captcha:'}
+            <input type="text"  />
+          </label>
+
           <input type="submit" value="Submit" />
         </form>
       );
